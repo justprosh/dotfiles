@@ -1,0 +1,20 @@
+[user]
+	name =  Aleksey Proshutinskiy
+	email = just.prosh@gmail.com
+[alias]
+    lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    unstage = reset HEAD
+    st = status -sb
+    undo = checkout --
+    subupdate = submodule update --init --recursive
+    cpick = cherry-pick
+[merge]
+	tool = vimdiff
+	ff = only
+	conflictstyle = diff3
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
+[gpg]
+program = gpg2
